@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cambié 'fixed' por 'border-box' */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(img/cyberpunk-mclaren-supercars-neon-art-1920x1080-1003.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 300px;
+}
+
+nav {
+    size: 100%;
+    /*max-width: 900px;*/
+    margin: auto;
+    background-color: hsla(0, 0%, 20%, 0.5);
+    font-size: auto;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+    background-color: #5757579c;
+}
+
+
+.menu-vertical {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    opacity: 1;
+}
+
+.menu-vertical li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+}
